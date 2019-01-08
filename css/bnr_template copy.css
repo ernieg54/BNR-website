@@ -1,0 +1,163 @@
+/* bnr_template.css */
+/* This template is for the brisnorth.scoutsqld.com.au website */
+/* Author: Ernie Gibbs, ARC Venturer Scouts, BNR */
+/* Written: 25 March 2018 */
+
+/* Style the main html elements */
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+	padding-left: 16px;
+	padding-right: 16px;
+	display: flex;
+	align-items: stretch;
+	flex-flow: row wrap;
+	background-color: white;
+}
+
+body {
+	background-color: rgb(0,105,78); /* #006249 */ 
+	color: black;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+}
+
+h1, h2, h3, h4, h5, h6  {
+    color: navy;
+    margin-left: 20px;
+}
+
+.strong {
+	font-weight: bold;
+}
+
+.centre {
+	text-align: center;
+}
+
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #FFAE31;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: LightGray;
+    color: black;
+}
+
+/* Style for the page header */
+.frame-nav {
+  height: 110px; /*can be anything*/
+  width: 12%; /*can be anything*/
+  display: inline-block;
+  position: relative;
+}
+
+.frame-content {
+  height: 100px; /*can be anything*/
+  width: 88%; /*can be anything*/
+  display: inline-block;
+  position: relative;
+}
+
+img.header {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 5px;
+}
+
+/* Style the nav (LH) column */
+.col-nav {
+    order: 1;
+	width: 12%;
+	background-color: white;
+    padding: 10px;
+}
+
+
+/* Style the content (RH) column */
+.col-content {
+    order: 2;
+	width: 88%;
+	background-color: white;
+    padding: 10px;
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+	height: auto;
+}
+
+/* Style the footer */
+.footer {
+	font-size: 0.9em;
+    background-color: WhiteSmoke;
+    padding: 10px;
+}
+
+/* Style the copyright notice */
+.Copyright {
+	text-align: center;
+	font-size: 0.8em;
+}
+	
+table.gridtable {
+	font-family: verdana,arial,sans-serif;
+	color: black;
+	border-width: 1px;
+	border-color: DimGray;
+	border-collapse: collapse;
+}
+table.gridtable th {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: DimGray;
+	background-color: rgb(0,105,78);
+	color: white;
+}
+table.gridtable td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: DimGray;
+	background-color: White;
+}
+
+@media only screen and (max-width: 480px) {
+	.col-content {
+		order: 1;
+	}
+	.col-nav {
+		order: 2;
+	}
+}

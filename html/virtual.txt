@@ -1,0 +1,12 @@
+<VirtualHost *:80>
+    DocumentRoot /hosting1/Client202/LinuxWeb/subdomains/brisnorth
+    ServerName www.brisnorth.scoutsqld.com.au
+    ServerAlias brisnorth.scoutsqld.com.au
+    DirectoryIndex index.cfm index.html index.htm index.asp
+    ErrorLog /hosting1/Client202/LinuxWeb/logs/subdomain_error.log
+    CustomLog /hosting1/Client202/LinuxWeb/logs/subdomain_access.log common
+    CheckSpelling On
+    CheckCaseOnly On
+</VirtualHost>
+
+    
