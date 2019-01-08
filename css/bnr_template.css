@@ -22,7 +22,8 @@
 }
 
 body {
-	background-color: rgb(0,105,78); /* #006249 */ 
+ 
+  background-color: rgb(38,38,97); /* Scouts Australia Navy Blue */
 	color: black;
 	margin: 0;
 	font-size: 1em;
@@ -171,7 +172,7 @@ table.gridtable th {
 	padding: 8px;
 	border-style: solid;
 	border-color: DimGray;
-	background-color: rgb(0,105,78);
+	background-color: rgb(61,92,146); /* Scouts Australia Medium Blue */
 	color: white;
 }
 table.gridtable td {
