@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6  {
 }
 
 .title {
-  color: navy;
+  color: black;
   text-align: left;
   margin-left: 20px;
   font-size: 2em;
@@ -75,14 +75,14 @@ h1, h2, h3, h4, h5, h6  {
 /* Style for the page header */
 .frame-nav {
   height: 110px; /*can be anything*/
-  width: 12%; /*can be anything*/
+  width: 20%; /*can be anything*/
   display: inline-block;
   position: relative;
 }
 
 .frame-content {
   height: 110px; /*can be anything*/
-  width: 88%; /*can be anything*/
+  width: 80%; /*can be anything*/
   display: inline-block;
   position: relative;
   line-height: 60px;
