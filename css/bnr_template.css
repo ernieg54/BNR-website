@@ -153,10 +153,14 @@ img.header {
 
 /* Style the nav (LH) column */
 .col-nav {
-    order: 1;
+  order: 1;
 	width: 12%;
 	background-color: white;
-    padding: 10px;
+  background-image: url("../images/gum_white_vert_560x1800.jpg");
+  background-position: 0% 20%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 10px;
 }
 
 
@@ -166,6 +170,11 @@ img.header {
 	width: 88%;
 	background-color: white;
     padding: 10px;
+}
+
+.left-indent {
+  margin-left: 35%;
+  text-align:left;
 }
 
 img {
@@ -185,9 +194,9 @@ img.inline-logo {
 	
 }
 
+
 /* Unordered list class to force dot to be immediately left of text */
 ul.inside {
-	text-align: center;
 	list-style-position: inside;
 /*	list-style-image: url('../images/Scouts Australia Icon BW.png'); */
 }
