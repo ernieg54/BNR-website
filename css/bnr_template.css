@@ -23,7 +23,7 @@
 
 body {
  
-  background-color: rgb(38,38,97); /* Scouts Australia Navy Blue */
+  background-color: rgb(38,38,97); /* Australian Navy Blue */
 	color: black;
 	margin: 0;
 	font-size: 1em;
@@ -32,14 +32,6 @@ body {
 h1, h2, h3, h4, h5, h6  {
     color: navy;
     margin-left: 20px;
-}
-
-.title {
-  color: black;
-  text-align: left;
-  margin-left: 20px;
-  font-size: 2em;
-  font-weight: bolder;
 }
 
 .strong {
@@ -54,14 +46,14 @@ h1, h2, h3, h4, h5, h6  {
 /* Style the top navigation bar */
 .topnav {
     overflow: hidden;
-    background-color: #FFAE31;
+    background-color: rgb(38,38,97);
 }
 
 /* Style the topnav links */
 .topnav a {
     float: left;
-    display: block;
-    color: black;
+/*    display: block; */
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -69,9 +61,57 @@ h1, h2, h3, h4, h5, h6  {
 
 /* Change color on hover */
 .topnav a:hover {
-    background-color: LightGray;
-    color: black;
+    background-color: rgb(61,92,146); /* Scouts Medium Blue */
+    color: white;
 }
+
+/* Add top nav elements for dropdown */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 0;
+  background-color: rgb(38,38,97);
+  font-family: inherit;
+  margin: 0;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(61,92,146);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(0,143,136);
+  min-width: 140px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: rgb(61,92,146);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 
 /* Style for the page header */
 .frame-nav {
@@ -87,6 +127,14 @@ h1, h2, h3, h4, h5, h6  {
   display: inline-block;
   position: relative;
   line-height: 60px;
+}
+
+.title {
+  color: black;
+  text-align: left;
+  margin-left: 20px;
+  font-size: 2em;
+  font-weight: bolder;
 }
 
 img.header {
