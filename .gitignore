@@ -23,3 +23,5 @@
 /public/assets
 .byebug_history
 
+# Ignore Mac OSX system file
+.DS_Store
