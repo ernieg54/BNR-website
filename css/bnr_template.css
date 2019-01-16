@@ -13,8 +13,8 @@
 
 .container {
 	margin: 1px 1em 1px 1em;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 0;
+	padding-right: 0;
 	display: flex;
 	align-items: stretch;
 	flex-flow: row wrap;
@@ -117,6 +117,10 @@ h1, h2, h3, h4, h5, h6  {
 .frame-nav {
   height: 110px; /*can be anything*/
   width: 20%; /*can be anything*/
+  background-color: rgb(38,38,97); /* Australian Navy Blue */
+  background-image: url("../images/Scouts_AUS_Master_Horiz_FullCol_Rev_RGB.png");
+  background-repeat: no-repeat;
+  background-size: contain;
   display: inline-block;
   position: relative;
 }
@@ -124,13 +128,17 @@ h1, h2, h3, h4, h5, h6  {
 .frame-content {
   height: 110px; /*can be anything*/
   width: 80%; /*can be anything*/
+  background-color: rgb(38,38,97); /* Australian Navy Blue */
+  background-image: url("../images/Scouts_horiz_07_1640x296.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   display: inline-block;
   position: relative;
   line-height: 60px;
 }
 
 .title {
-  color: black;
+  color: white;
   text-align: left;
   margin-left: 20px;
   font-size: 2em;
@@ -155,14 +163,18 @@ img.header {
 .col-nav {
   order: 1;
 	width: 12%;
-	background-color: white;
-  background-image: url("../images/gum_white_vert_382x1632.jpg");
+  color: white;
+  background-color: rgb(38,38,97); /* Australian Navy Blue */
+  background-image: url("../images/Scouts_vert_02_254x1412.jpg");
   background-position: 0% 20%;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   padding: 10px;
 }
 
+.col-nav a {
+  color: rgb(0,143,136);
+}
 
 /* Style the content (RH) column */
 .col-content {

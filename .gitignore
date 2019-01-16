@@ -23,3 +23,5 @@
 /public/assets
 .byebug_history
 
+# Sources folder
+/Sources/*
