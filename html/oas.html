@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      } 
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+</script>
+<head>
+  <link rel="stylesheet" type="text/css" href="../css/bnr_template.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>QYIP in BNR</title>
+</head>
+
+<body>
+  <div w3-include-html="bnr_topMenu.html"></div>
+  <div class="container">
+    <div class="frame-nav">
+
+    </div>
+    <div class="frame-content"> 
+      <p class="title">Brisbane North Region</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="col-nav">
+          <p class="strong">QYIP in BNR</p>
+    </div>
+    <div class="col-content"> 
+
+     <h2>Implementing the New Youth Program in Brisbane North Region</h2>
+      <p>As the largest Region in Queensland, Brisbane North has introduced an initiative to coordinate the New Youth Program implementation within the Region.</p>
+      <p>The intent of this initiative is to promote the Queensland New Youth Program Implementation (QYIP) by providing education and facilitation support throughout the Region. This is primarily to remove and transfer some of the burden of providing this support from the Branch team to our Region.</p>
+     <p>Four key people have been identified at Region level as subject matter experts. They are:</p>
+        <ul>
+        <li>Hsien-Jin</li>
+        <li>Russell</li>
+        <li>Emma</li>
+        <li>Jenny</li>
+        </ul>
+      <p>All requests for support, workshops, information sessions, etc. should be directed to one of these people.</p>
+      <p>Below are links to the key Queensland Branch resources relation to the QYIP</p>
+      <h3>New Youth Program resources</h3>
+      <p><a href="https://sites.google.com/view/qldnyp/home">Scouts Qld NYP Implementation</a></p>
+
+
+    </div>
+  </div>  
+
+<div w3-include-html="bnr_footer.html"></div>
+   
+<div w3-include-html="bnr_goStats.html"></div>
+
+<script>
+includeHTML();
+</script>
+</body>
+</html>
