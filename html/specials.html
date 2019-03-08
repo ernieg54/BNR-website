@@ -1,5 +1,34 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+<script>
+function includeHTML() {
+  var z, i, elmnt, file, xhttp;
+  /* Loop through a collection of all HTML elements: */
+  z = document.getElementsByTagName("*");
+  for (i = 0; i < z.length; i++) {
+    elmnt = z[i];
+    /*search for elements with a certain atrribute:*/
+    file = elmnt.getAttribute("w3-include-html");
+    if (file) {
+      /* Make an HTTP request using the attribute value as the file name: */
+      xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (this.readyState == 4) {
+          if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+          if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+          /* Remove the attribute, and call this function once more: */
+          elmnt.removeAttribute("w3-include-html");
+          includeHTML();
+        }
+      } 
+      xhttp.open("GET", file, true);
+      xhttp.send();
+      /* Exit the function: */
+      return;
+    }
+  }
+}
+</script>
 <head>
   <link rel="stylesheet" type="text/css" href="../css/bnr_template.css">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -7,23 +36,7 @@
 </head>
 
 <body>
-  <div class="topnav">
-    <a href="../index.html">Home</a>
-    <a href="team.html">Team</a>
-    <a href="map.html">Region Map</a>
-    <a href="leaders.html">Leader Resources</a>
-    <a href="Calendar.html">Calendar</a>
-    <div class="dropdown">
-      <button class="dropbtn"><a href="sections.html">Sections &#9660;</a> </button>
-      <div class="dropdown-content">
-        <a href="joeys.html">Joey Scouts</a>
-        <a href="cubs.html">Cub Scouts</a>
-        <a href="scouts.html">Scouts</a>
-        <a href="venturers.html">Venturer Scouts</a>
-        <a href="rovers.html">Rover Scouts</a>
-      </div>
-    </div> 
-  </div>
+  <div w3-include-html="bnr_topMenu.html"></div>
 
 <div class="container">
   <div class="frame-nav">
@@ -43,7 +56,7 @@
     <h2>Request for Flag Party</h2>
     <p>Hello Youth Members and Leaders in Brisbane North Region</p>
     <p>We have been asked by the Chief Commissioner's office to provide a flag party for an event to commemmorate the 70th Anniversary of the Commonwealth</p>
-    <p>As at 15 Feb, it is not clear if they want a Scout sectional party, or if they are looking for 54 flag bearers for each country in the Commonwealth.</p>
+    <p>They only require three youth members.</p>
     <p>Note that the event is during school, study and work hours, but if you are able to assist, please submit your name via email to 
     <script type="text/javascript">
           <!-- Begin
@@ -65,24 +78,16 @@
     <p>&nbsp;</p>
 
 
-    <div class="footer">
-      <a href="../index.html">Home</a> | <a href="team.html">Team</a> | <a href="map.html">Region Map</a> | <a href="leaders.html">Leader Resources</a> | <a href="Calendar.html">Calendar</a> | <a href="sections.html">Sections</a></p>
-      <p class="Copyright">&copy; 2019 All rights reserved</p>
-    </div>  
   </div>
 </div>  
   
-  
-<!-- GoStats JavaScript Based Code -->
-<script type="text/javascript" src="http://gostats.com/js/counter.js"></script>
-<script type="text/javascript">_gos='c5.gostats.com';_goa=1049322;
-_got=5;_goi=1;_gol='web visitors';_GoStatsRun();</script>
-<noscript><a target="_blank" title="web visitors" 
-href="http://gostats.com"><img alt="web visitors" 
-src="http://c5.gostats.com/bin/count/a_1049322/t_5/i_1/counter.png" 
-style="border-width:0" /></a></noscript>
-<!-- End GoStats JavaScript Based Code -->
-      
+<div w3-include-html="bnr_footer.html"></div>
+   
+<div w3-include-html="bnr_goStats.html"></div>
+
+<script>
+includeHTML();
+</script>
 
 </body>
 </html>
