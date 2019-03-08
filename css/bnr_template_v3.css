@@ -228,20 +228,10 @@ p.inline {
 
 /* Style the footer */
 .footer {
-  text-align: center;
-  font-size: 0.9em;
+	font-size: 0.9em;
     background-color: rgb(0,143,136);
     padding: 10px;
 }
-
-.footer a {
-  color: rgb(153,255,248);
-}
-
-.footer a:visited {
-  color: rgb(204,255,252);
-}
-
 
 /* Style the copyright notice */
 .Copyright {
