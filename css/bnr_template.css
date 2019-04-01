@@ -264,14 +264,14 @@ ul.inside {
 table.gridtable {
 	color: white;
 	border-width: 1px;
-	border-color: DimGray;
+	border-color: dimgray;
 	border-collapse: collapse;
-
+}
 table.gridtable th {
 	border-width: 1px;
 	padding: 8px;
 	border-style: solid;
-	border-color: DimGray;
+	border-color: dimgray;
 	background-color: rgb(61,92,146); /* Scouts Australia Medium Blue */
 	color: white;
 }
@@ -279,7 +279,7 @@ table.gridtable td {
 	border-width: 1px;
 	padding: 8px;
 	border-style: solid;
-	border-color: DimGray;
+	border-color: dimgray;
 	background-color: rgb(0,143,136);
 }
 
