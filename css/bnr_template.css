@@ -23,7 +23,7 @@
 }
 
 body {
- 
+
   background-color: rgb(38,38,97); /* Australian Navy Blue */
 	color: white;
 	margin: 0;
@@ -89,7 +89,7 @@ p {
 }
 
 .dropdown .dropbtn {
-  font-size: 16px;  
+  font-size: 16px;
   border: none;
   outline: none;
   color: white;
@@ -135,7 +135,7 @@ p {
   height: 110px; /*can be anything*/
   width: 20%; /*can be anything*/
   background-color: rgb(38,38,97); /* Australian Navy Blue */
-  background-image: url("../images/Scouts_AUS_Master_Horiz_FullCol_Rev_RGB.png");
+  background-image: url("../images/Scouts_QLD_Colour_Rev.jpg");
   background-repeat: no-repeat;
   background-size: contain;
   display: inline-block;
@@ -228,7 +228,7 @@ img.inline-logo {
 	width: auto;
 	padding-left: 5px;
 	padding-right: 5px;
-	
+
 }
 
 
@@ -260,7 +260,7 @@ ul.inside {
 	text-align: center;
 	font-size: 0.8em;
 }
-	
+
 table.gridtable {
 	color: white;
 	border-width: 1px;
