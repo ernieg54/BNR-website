@@ -24,8 +24,11 @@
 
 /* Style the top navigation bar */
 .topnav {
-    overflow: hidden;
-    background-color: rgb(38,38,97);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  background-color: rgb(38,38,97);
 }
 
 /* Style the topnav links */
