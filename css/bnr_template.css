@@ -19,7 +19,91 @@
 	display: flex;
 	align-items: stretch;
 	flex-flow: row wrap;
-	background-color: rgb(0,143,136);
+	background-color: rgb(0,143,136); /* Australian Dark Teal */
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: rgb(38,38,97);
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+/*    display: block; */
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: rgb(61,92,146); /* Scouts Medium Blue */
+    color: white;
+}
+
+
+/* Style for the page header */
+
+.header-qld {
+  height: 110px;
+  width: 20%;
+  background-color: rgb(38,38,97); /* Australian Navy Blue */
+  background-image: url("../images/Scouts_QLD_Colour_Rev.jpg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: contain;
+  display: inline-block;
+  position: relative;
+}
+
+.header-title {
+  height: 110px;
+  width: 72%;
+  background-color: rgb(38,38,97); /* Australian Navy Blue */
+  background-image: url("../images/Scouts_horiz_07_1640x296.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+  display: inline-block;
+  position: relative;
+  line-height: 60px;
+}
+
+.header-bnr {
+  height: 110px;
+  width: 8%;
+  background-color: rgb(38,38,97); /* Australian Navy Blue */
+  background-image: url("../images/BNR_1030x1280_colour.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+  display: inline-block;
+  position: relative;
+}
+
+.title {
+  color: white;
+  text-align: left;
+  margin-left: 20px;
+  font-size: 2em;
+  font-weight: bolder;
+}
+
+img.header {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 5px;
 }
 
 body {
@@ -58,28 +142,6 @@ p {
 
 .center {
   text-align: center;
-}
-
-/* Style the top navigation bar */
-.topnav {
-    overflow: hidden;
-    background-color: rgb(38,38,97);
-}
-
-/* Style the topnav links */
-.topnav a {
-    float: left;
-/*    display: block; */
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-/* Change color on hover */
-.topnav a:hover {
-    background-color: rgb(61,92,146); /* Scouts Medium Blue */
-    color: white;
 }
 
 /* Add top nav elements for dropdown */
@@ -129,53 +191,6 @@ p {
   display: block;
 }
 
-
-/* Style for the page header */
-.frame-nav {
-  height: 110px; /*can be anything*/
-  width: 20%; /*can be anything*/
-  background-color: rgb(38,38,97); /* Australian Navy Blue */
-  background-image: url("../images/Scouts_QLD_Colour_Rev.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  display: inline-block;
-  position: relative;
-}
-
-.frame-content {
-  height: 110px; /*can be anything*/
-  width: 80%; /*can be anything*/
-  background-color: rgb(38,38,97); /* Australian Navy Blue */
-  background-image: url("../images/Scouts_horiz_07_1640x296.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: inline-block;
-  position: relative;
-  line-height: 60px;
-}
-
-.title {
-  color: white;
-  text-align: left;
-  margin-left: 20px;
-  font-size: 2em;
-  font-weight: bolder;
-}
-
-img.header {
-  max-height: 100%;
-  max-width: 100%;
-  width: auto;
-  height: auto;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  padding: 5px;
-}
-
 /* Style the nav (LH) column */
 .col-nav {
   order: 1;
@@ -211,6 +226,11 @@ img.header {
 
 .list-indent {
   margin-left: 35%;
+  text-align: left;
+}
+
+.list-indent05 {
+  margin-left: 5%;
   text-align: left;
 }
 

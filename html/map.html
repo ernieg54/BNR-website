@@ -20,7 +20,7 @@ function includeHTML() {
           elmnt.removeAttribute("w3-include-html");
           includeHTML();
         }
-      } 
+      }
       xhttp.open("GET", file, true);
       xhttp.send();
       /* Exit the function: */
@@ -37,36 +37,40 @@ function includeHTML() {
 
 <body>
   <div w3-include-html="bnr_topMenu.html"></div>
+  <div w3-include-html="bnr_header.html"></div>
 
-<div class="container">
-	<div class="frame-nav">
+<!-- <div class="container">
+	<div class="header-qld">
 
 	</div>
-	<div class="frame-content">	
+	<div class="header-title">
 		<p class="title">Brisbane North Region</p>
 	</div>
-</div>
+  <div class="header-bnr">
+
+  </div>
+</div> -->
 
 <div class="container">
 	<div class="col-nav">
         <p class="strong">Region Map</p>
 	</div>
-	<div class="col-content centre">	
+	<div class="col-content centre">
 		<img src="../images/BNR_w_Districts.JPG" alt="RegionMap" width="668" height="696" border="0" usemap="#Map" />
         <map name="Map" id="Map">
 <!--		<area shape="poly" coords="429,502,430,500,657,385,656,206,503,228,336,199" href="http://www.charlesssnow.scoutsqld.com.au" alt="" />
 		<area shape="poly" coords="335,11,656,11,656,197,504,219,336,191" href="http://www.bramblebay.scoutsqld.com.au" alt="Bramble Bay District" />
 		<area shape="poly" coords="12,394,388,394,423,508,389,546,13,546" href="http://www.taylorrange.scoutsqld.com.au" alt="Taylor Range District" />
-		<area shape="poly" coords="13,552,385,553,273,685,12,687" href="http://www.tyakunda.scoutsqld.com.au" alt="Tyakunda District" />
 -->
-		<area shape="poly" coords="12,139,327,139,327,195,385,387,11,387" href="http://www.sirlesliewilson.scoutsqld.com.au" alt="Sir Leslie Wilson District" />
+		<area shape="poly" coords="13,552,385,553,273,685,12,687" href="https://tyakunda.scoutsqld.com.au" alt="Tyakunda District" />
+		<area shape="poly" coords="12,139,327,139,327,195,385,387,11,387" href="https://www.sirlesliewilson.scoutsqld.com.au" alt="Sir Leslie Wilson District" />
         </map>
 		<p>&nbsp;</p>
 	</div>
-</div>	
-	
+</div>
+
 <div w3-include-html="bnr_footer.html"></div>
-   
+
 <div w3-include-html="bnr_goStats.html"></div>
 
 <script>

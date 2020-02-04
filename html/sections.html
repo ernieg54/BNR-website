@@ -20,7 +20,7 @@ function includeHTML() {
           elmnt.removeAttribute("w3-include-html");
           includeHTML();
         }
-      } 
+      }
       xhttp.open("GET", file, true);
       xhttp.send();
       /* Exit the function: */
@@ -37,21 +37,25 @@ function includeHTML() {
 
 <body>
   <div w3-include-html="bnr_topMenu.html"></div>
+  <div w3-include-html="bnr_header.html"></div>
 
-<div class="container">
-	<div class="frame-nav">
+<!-- <div class="container">
+	<div class="header-qld">
 
 	</div>
-	<div class="frame-content">	
-    <p class="title">Brisbane North Region</p>
+	<div class="header-title">
+		<p class="title">Brisbane North Region</p>
 	</div>
-</div>
+  <div class="header-bnr">
+
+  </div>
+</div> -->
 
 <div class="container">
 	<div class="col-nav">
         <p class="strong">Sections</p>
 	</div>
-	<div class="col-content">	
+	<div class="col-content">
       <p class="centre">
          <object width="360" height="289">
           <param name="movie" value="http://www.youtube.com/v/T08W-jXcEYk&amp;hl=en_US&amp;fs=1" />
@@ -74,10 +78,10 @@ function includeHTML() {
       <p>&nbsp;</p>
     <p>&nbsp;</p>
 	</div>
-</div>	
-	
+</div>
+
 <div w3-include-html="bnr_footer.html"></div>
-   
+
 <div w3-include-html="bnr_goStats.html"></div>
 
 <script>

@@ -20,7 +20,7 @@ function includeHTML() {
           elmnt.removeAttribute("w3-include-html");
           includeHTML();
         }
-      } 
+      }
       xhttp.open("GET", file, true);
       xhttp.send();
       /* Exit the function: */
@@ -37,31 +37,35 @@ function includeHTML() {
 
 <body>
   <div w3-include-html="bnr_topMenu.html"></div>
+  <div w3-include-html="bnr_header.html"></div>
 
-<div class="container">
-	<div class="frame-nav">
+<!-- <div class="container">
+	<div class="header-qld">
 
 	</div>
-	<div class="frame-content">	
+	<div class="header-title">
 		<p class="title">Brisbane North Region</p>
 	</div>
-</div>
+  <div class="header-bnr">
+
+  </div>
+</div> -->
 
 <div class="container">
 	<div class="col-nav">
         <p class="strong">Rover Scouts</p>
         <p>&nbsp;</p>
 	</div>
-	<div class="col-content centre">	
-          <p><img src="../images/Scouts_Section_Rover_Master_Vert_FullCol_RGB.png" alt="rovers" 
+	<div class="col-content centre">
+          <p><img src="../images/Scouts_Section_Rover_Master_Vert_FullCol_RGB.png" alt="rovers"
         	style="width:10%;height:10%;"></p>
       <img src="../images/under_construction.gif" width="350" height="299" alt="underConstruction" />
 		<p>&nbsp;</p>
 	</div>
-</div>	
-	
+</div>
+
 <div w3-include-html="bnr_footer.html"></div>
-   
+
 <div w3-include-html="bnr_goStats.html"></div>
 
 <script>
